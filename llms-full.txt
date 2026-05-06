@@ -1,0 +1,46 @@
+# Coventry
+
+> Geotechnical engineering company in United States, providing professional services in soil mechanics, foundation engineering and site investigation.
+
+## Services
+- [Active Passive Anchor Design](https://coventry.geotechnical-engineering.biz/active-passive-anchor-design/)
+- [Base Isolation Seismic Design](https://coventry.geotechnical-engineering.biz/base-isolation-seismic-design/)
+- [Bearing Capacity Analysis](https://coventry.geotechnical-engineering.biz/bearing-capacity-analysis/)
+- [Cone Penetration](https://coventry.geotechnical-engineering.biz/cone-penetration/)
+- [Debris Flow Analysis](https://coventry.geotechnical-engineering.biz/debris-flow-analysis/)
+- [Deep Soil Mixing](https://coventry.geotechnical-engineering.biz/deep-soil-mixing/)
+- [Field Vane Shear](https://coventry.geotechnical-engineering.biz/field-vane-shear/)
+- [Foundations](https://coventry.geotechnical-engineering.biz/foundations/)
+- [Geophysics](https://coventry.geotechnical-engineering.biz/geophysics/)
+- [Geotechnical Road Drainage](https://coventry.geotechnical-engineering.biz/geotechnical-road-drainage/)
+- [Ground Improvement](https://coventry.geotechnical-engineering.biz/ground-improvement/)
+- [In Situ Testing](https://coventry.geotechnical-engineering.biz/in-situ-testing/)
+- [Investigation](https://coventry.geotechnical-engineering.biz/investigation/)
+- [Jet Grouting Design](https://coventry.geotechnical-engineering.biz/jet-grouting-design/)
+- [Laboratory](https://coventry.geotechnical-engineering.biz/laboratory/)
+- [Pile Foundation Design](https://coventry.geotechnical-engineering.biz/pile-foundation-design/)
+- [Porchet Double Ring Infiltrometer](https://coventry.geotechnical-engineering.biz/porchet-double-ring-infiltrometer/)
+- [Preloading Surcharge Design](https://coventry.geotechnical-engineering.biz/preloading-surcharge-design/)
+- [Refraction Reflection](https://coventry.geotechnical-engineering.biz/refraction-reflection/)
+- [Retaining Wall Design](https://coventry.geotechnical-engineering.biz/retaining-wall-design/)
+- [Road Embankment Design](https://coventry.geotechnical-engineering.biz/road-embankment-design/)
+- [Roadway](https://coventry.geotechnical-engineering.biz/roadway/)
+- [Seismic](https://coventry.geotechnical-engineering.biz/seismic/)
+- [Settlement Analysis](https://coventry.geotechnical-engineering.biz/settlement-analysis/)
+- [Shear Wave Velocity](https://coventry.geotechnical-engineering.biz/shear-wave-velocity/)
+- [Sheet Pile Wall Design](https://coventry.geotechnical-engineering.biz/sheet-pile-wall-design/)
+- [Slope Stability Analysis](https://coventry.geotechnical-engineering.biz/slope-stability-analysis/)
+- [Slopes Walls](https://coventry.geotechnical-engineering.biz/slopes-walls/)
+- [Soil Classification](https://coventry.geotechnical-engineering.biz/soil-classification/)
+- [Soil Liquefaction Analysis](https://coventry.geotechnical-engineering.biz/soil-liquefaction-analysis/)
+- [Soil Mechanics Study](https://coventry.geotechnical-engineering.biz/soil-mechanics-study/)
+- [Standard Penetration](https://coventry.geotechnical-engineering.biz/standard-penetration/)
+- [Undisturbed Sampling](https://coventry.geotechnical-engineering.biz/undisturbed-sampling/)
+- [Vibrocompaction Design](https://coventry.geotechnical-engineering.biz/vibrocompaction-design/)
+
+## Contact
+- Website: https://coventry.geotechnical-engineering.biz/
+
+## About
+This page provides information about geotechnical engineering services available in United States.
+The company complies with local and international standards including ASTM, ISO and country-specific norms.
