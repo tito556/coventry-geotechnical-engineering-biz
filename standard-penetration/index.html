@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -166,7 +202,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Process overview</h2><div>BS EN 1997-2:2007 and BS 5930:2015 define the execution and reporting of SPT in the UK. In Coventry, where the superficial geology includes the Oadby Member till overlying the Mercia Mudstone Group, the test provides a continuous profile of relative density and consistency. The procedure follows a standard 63.5 kg hammer dropped 760 mm, recording blows for three successive 150 mm increments. The top 150 mm is considered seating drive and is discarded; the sum of the next two increments gives the N-value. For deeper strata, the test is run at 1.0 to 1.5 m intervals, with continuous sampling using a U100 tube in cohesive horizons. The results feed directly into bearing capacity calculations using the Terzaghi and Meyerhof methods. Complementing the SPT survey with capacidad de carga analysis allows the design team to correlate N-values with allowable net pressures for shallow foundations in the till. When the underlying sandstone is encountered, the SPT refusal criterion (typically 50 blows per 75 mm) signals rockhead depth with high confidence, and the data can be cross-checked against a tomografía sísmica survey to map lateral variability in the weathered zone.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Coventry</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Ground conditions across Coventry vary significantly between the southern suburbs, where the till is dense and overconsolidated, and the northern industrial areas near the River Sowe, where soft alluvial clays and peat lenses occur. The risk of underestimating settlement in those soft zones is real: an SPT in a peat lens can return N-values below 4, misleading a designer into specifying deep foundations unnecessarily. A proper SPT programme spaced at 10 to 15 m centres and extended to refusal or 5 m below foundation level catches those soft pockets. Without it, differential settlement between adjacent pads could exceed 25 mm, violating the serviceability limit state under Eurocode 7.</p></div></section>
+<section class="block"><div class="container"><h2>Process overview</h2><div>BS EN 1997-2:2007 and BS 5930:2015 define the execution and reporting of SPT in the UK. In Coventry, where the superficial geology includes the Oadby Member till overlying the Mercia Mudstone Group, the test provides a continuous profile of relative density and consistency. The procedure follows a standard 63.5 kg hammer dropped 760 mm, recording blows for three successive 150 mm increments. The top 150 mm is considered seating drive and is discarded; the sum of the next two increments gives the N-value. For deeper strata, the test is run at 1.0 to 1.5 m intervals, with continuous sampling using a U100 tube in cohesive horizons. The results feed directly into bearing capacity calculations using the Terzaghi and Meyerhof methods. Complementing the SPT survey with capacidad de carga analysis allows the design team to correlate N-values with allowable net pressures for shallow foundations in the till. When the underlying sandstone is encountered, the SPT refusal criterion (typically 50 blows per 75 mm) signals rockhead depth with high confidence, and the data can be cross-checked against a tomografía sísmica survey to map lateral variability in the weathered zone.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Coventry</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Ground conditions across Coventry vary significantly between the southern suburbs, where the till is dense and overconsolidated, and the northern industrial areas near the River Sowe, where soft alluvial clays and peat lenses occur. The risk of underestimating settlement in those soft zones is real: an SPT in a peat lens can return N-values below 4, misleading a designer into specifying deep <a href="/foundations/">foundations</a> unnecessarily. A proper SPT programme spaced at 10 to 15 m centres and extended to refusal or 5 m below foundation level catches those soft pockets. Without it, differential settlement between adjacent pads could exceed 25 mm, violating the serviceability limit state under Eurocode 7.</p></div></section>
     <section class="block mid-cta-6c29-6c29" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#F43F5E15,#F43F5E08);border-left:4px solid #F43F5E;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>

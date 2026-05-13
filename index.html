@@ -112,6 +112,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -213,7 +249,7 @@ header.hero, .hero { position: relative !important; }
 
 <section class="block"><div class="container"><h2>Local geology</h2>
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
-<div>Coventry sits predominantly on the Mercia Mudstone Group, a sequence of reddish-brown silty mudstones and sandstones that often weather to stiff clays near the surface. Superficial deposits include river terrace gravels and alluvium along the River Sowe and Sherbourne valleys, while glacial till—locally known as boulder clay—is present across higher ground. These variable strata can produce rapid changes in bearing capacity and groundwater conditions, particularly where perched water tables occur above the mudstone. In the wider Warwickshire region, dissolution features in underlying gypsum-bearing horizons occasionally create unpredictable voids, requiring targeted investigation. Understanding this geological mosaic is essential for designing solid foundations and managing excavation stability in Coventry's urban environment.</div></div></section><section class="block tint"><div class="container"><h2>Reference standards</h2><p>All geotechnical work in Coventry follows British Standards and Eurocodes. BS 5930 provides the framework for site investigation, while BS EN 1997-1 (Eurocode 7) governs geotechnical design with UK National Annex amendments. Standard penetration testing (SPT) is performed to BS EN ISO 22476-3, and laboratory classification tests follow BS 1377. For seismic considerations, we reference the UK National Seismic Hazard Map and BS EN 1998-5. Our reports are prepared in accordance with the AGS data format and the ICE Specification for Ground Investigation.</p></div></section>
+<div>Coventry sits predominantly on the Mercia Mudstone Group, a sequence of reddish-brown silty mudstones and sandstones that often weather to stiff clays near the surface. Superficial deposits include river terrace gravels and alluvium along the River Sowe and Sherbourne valleys, while glacial till—locally known as boulder clay—is present across higher ground. These variable strata can produce rapid changes in bearing capacity and groundwater conditions, particularly where perched water tables occur above the mudstone. In the wider Warwickshire region, dissolution features in underlying gypsum-bearing horizons occasionally create unpredictable voids, requiring targeted investigation. Understanding this geological mosaic is essential for designing solid foundations and managing excavation stability in Coventry's urban environment.</div></div></section><section class="block tint"><div class="container"><h2>Reference standards</h2><p>All geotechnical work in Coventry follows British Standards and Eurocodes. BS 5930 provides the framework for site investigation, while BS EN 1997-1 (Eurocode 7) governs geotechnical design with UK National Annex amendments. <a href="/standard-penetration/">Standard penetration</a> testing (SPT) is performed to BS EN ISO 22476-3, and laboratory classification tests follow BS 1377. For seismic considerations, we reference the UK National Seismic Hazard Map and BS EN 1998-5. Our reports are prepared in accordance with the AGS data format and the ICE Specification for Ground Investigation.</p></div></section>
     <section class="block mid-cta-6c29-6c29" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#F43F5E15,#F43F5E08);border-left:4px solid #F43F5E;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>

@@ -115,6 +115,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#4B0082) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <div class="topbar">
@@ -166,7 +202,7 @@ header.hero, .hero { position: relative !important; }
 
 
 
-<section class="block"><div class="container"><h2>Process overview</h2><div>The city grew rapidly after the 1940s, with many structures built directly over rubble and ash fills. That legacy makes pile foundation design a necessity rather than an option. We have developed a workflow that suits Coventry’s conditions precisely. <ul><li>We correlate SPT N-values from our boreholes with local Mercia Mudstone strength profiles.</li><li>We apply negative skin friction calculations where fills may settle around the pile shaft.</li><li>We model group effects using elastic continuum methods, not just simple superposition.</li></ul> For sites near the River Sowe, where groundwater is shallow, we also check deep soil mixing as an alternative to displacement piles. That approach reduces spoil and vibration near existing foundations. Every design we produce follows Eurocode 7 and uses partial factors calibrated to UK practice.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Coventry</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Coventry sits in a low seismicity zone, but the real risk here is settlement of deep fills and collapse of old mine workings in the Warwickshire Coalfield to the north. Eurocode 7 requires us to address both ultimate and serviceability limit states. We always check for voids beneath the pile toe using geophysics. Ignoring fill variability can lead to differential settlement exceeding 50 mm. That is unacceptable for modern framed structures. Our pile foundation design always includes a load test programme to verify assumptions before full production.</p></div></section>
+<section class="block"><div class="container"><h2>Process overview</h2><div>The city grew rapidly after the 1940s, with many structures built directly over rubble and ash fills. That legacy makes pile foundation design a necessity rather than an option. We have developed a workflow that suits Coventry’s conditions precisely. <ul><li>We correlate SPT N-values from our boreholes with local Mercia Mudstone strength profiles.</li><li>We apply negative skin friction calculations where fills may settle around the pile shaft.</li><li>We model group effects using elastic continuum methods, not just simple superposition.</li></ul> For sites near the River Sowe, where groundwater is shallow, we also check deep soil mixing as an alternative to displacement piles. That approach reduces spoil and vibration near existing foundations. Every design we produce follows Eurocode 7 and uses partial factors calibrated to UK practice.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Coventry</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Coventry sits in a low seismicity zone, but the real risk here is settlement of deep fills and collapse of old mine workings in the Warwickshire Coalfield to the north. Eurocode 7 requires us to address both ultimate and serviceability limit states. We always check for voids beneath the pile toe using <a href="/geophysics/">geophysics</a>. Ignoring fill variability can lead to differential settlement exceeding 50 mm. That is unacceptable for modern framed structures. Our pile foundation design always includes a load test programme to verify assumptions before full production.</p></div></section>
     <section class="block mid-cta-6c29-6c29" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#F43F5E15,#F43F5E08);border-left:4px solid #F43F5E;padding:1.5rem 1.8rem;border-radius:6px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
