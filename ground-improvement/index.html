@@ -137,7 +137,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -149,6 +149,62 @@ body>*{max-width:100vw}
   .navbar{flex-wrap:wrap}
 }
 </style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -157,8 +213,7 @@ body>*{max-width:100vw}
     </div>
     <div class="nav">
         <div class="nav-item has-dd"><a href="../investigation/" class="nav-cat-link">Investigation</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../cone-penetration/">CPT (Cone Penetration Test)</a><a href="../standard-penetration/">SPT (Standard Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="../in-situ-testing/" class="nav-cat-link">In-Situ</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../porchet-double-ring-infiltrometer/">Infiltration test (Porchet/Double-ring infiltrometer)</a><a href="../undisturbed-sampling/">Undisturbed sampling (Shelby tube)</a><a href="../field-vane-shear/">Field vane shear test (VST)</a></div></div><div class="nav-item has-dd"><a href="../laboratory/" class="nav-cat-link">Laboratory</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../soil-classification/">Soil classification (USCS/AASHTO)</a><a href="../soil-mechanics-study/">Soil mechanics study</a></div></div><div class="nav-item has-dd"><a href="../geophysics/" class="nav-cat-link">Geophysics</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../shear-wave-velocity/">MASW / VS30 (shear wave velocity)</a><a href="../refraction-reflection/">Seismic tomography (refraction/reflection)</a></div></div><div class="nav-item has-dd"><a href="../foundations/" class="nav-cat-link">Foundations</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../settlement-analysis/">Settlement analysis</a><a href="../bearing-capacity-analysis/">Bearing capacity analysis</a><a href="../pile-foundation-design/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="../slopes-walls/" class="nav-cat-link">Slopes & Walls</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../slope-stability-analysis/">Slope stability analysis</a><a href="../debris-flow-analysis/">Debris flow analysis</a><a href="../active-passive-anchor-design/">Active/passive anchor design</a><a href="../retaining-wall-design/">Retaining wall design</a><a href="../sheet-pile-wall-design/">Sheet pile wall design</a></div></div><div class="nav-item has-dd"><a href="../ground-improvement/" class="nav-cat-link">Improvement</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../deep-soil-mixing/">Deep Soil Mixing (DSM) design</a><a href="../jet-grouting-design/">Jet grouting design</a><a href="../preloading-surcharge-design/">Preloading with surcharge design</a><a href="../vibrocompaction-design/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="../roadway/" class="nav-cat-link">Roadway</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../road-embankment-design/">Road embankment design</a><a href="../geotechnical-road-drainage/">Geotechnical road drainage</a></div></div><div class="nav-item has-dd"><a href="../seismic/" class="nav-cat-link">Seismic</a><button class="nav-arrow" type="button">▾</button><div class="dd"><a href="../soil-liquefaction-analysis/">Soil liquefaction analysis</a><a href="../base-isolation-seismic-design/">Base isolation seismic design</a></div></div>
-        <a class="nav-contact-btn" href="mailto:contact@geotechnical-engineering.biz">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -169,11 +224,11 @@ body>*{max-width:100vw}
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
 
+
+<img src="/img/vibrocompactacion-1.webp" alt="Improvement in Coventry" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Improvement in Coventry addresses the engineering challenges posed by the region's complex Quaternary geology, which is dominated by glacial till, glaciofluvial sands and gravels, and the underlying Mercia Mudstone Group. These variable ground conditions often require targeted intervention to increase bearing capacity, reduce settlement, and mitigate liquefaction potential. Our approach begins with a thorough <a href="/investigation/">investigation</a> programme to characterise the site, strictly following the guidelines of BS 5930:2015+A1:2020 and the requirements of the NHBC Standards for residential developments. The <a href="/laboratory/">laboratory</a> testing of recovered samples, classified in accordance with BS EN ISO 14688, provides the essential parameters for selecting the most appropriate improvement technique.</p>
 <p>Our Improvement methodology is rooted in the observational method of Eurocode 7 (BS EN 1997-2:2007) and is validated by rigorous in-situ verification. The selection and design of techniques such as vibro stone columns, dynamic compaction, or rigid inclusions are informed by precise subsurface data. We routinely deploy the <a href="/cone-penetration/">Cone Penetration Test (CPT)</a> to create continuous profiles of tip resistance and sleeve friction, which are critical for identifying loose, compressible layers and calibrating improvement designs. For cohesive soils, the <a href="/field-vane-shear/">field vane shear test (VST)</a> provides an immediate measurement of undrained shear strength, a key parameter for assessing the stability of treated ground, while <a href="/standard-penetration/">Standard Penetration Test (SPT)</a> data is correlated with published UK guidance to estimate the relative density of granular soils before and after treatment.</p>
 <p>Typical projects in Coventry and the wider West Midlands reflect the region's industrial legacy and ongoing urban regeneration. Improvement is frequently specified for the redevelopment of former manufacturing sites in areas like Canley and Foleshill into residential estates and logistics hubs, where uncontrolled fill and variable natural strata are common. Infrastructure works, including the A46 link road improvements and commercial parks near Coventry Airport, often require the stabilisation of deep alluvial deposits to support heavily loaded pavements. For these projects, we integrate <a href="/undisturbed-sampling/">undisturbed sampling (Shelby tube)</a> with advanced <a href="/in-situ-testing/">In-Situ</a> to establish the pre-treatment engineering properties and provide a baseline for post-improvement verification, ensuring performance criteria for settlement and bearing capacity are met.</p>
-<img src="/img/vibrocompactacion-1.webp" alt="Improvement in Coventry" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>The process is delivered through a structured, phased workflow from initial feasibility to validation. It begins with a design-focused investigation to define the target ground model, followed by the specification of improvement objectives in line with the relevant British Standards. Our final deliverable is a comprehensive Improvement Validation Report that includes all site observations, installation records, and post-treatment verification test results, complete with a <a href="/soil-classification/">soil classification</a> to USCS and AASHTO standards for international stakeholder clarity. This provides a complete, audit-ready package that demonstrates compliance with UK regulatory requirements and gives developers, contractors, and insurers the technical assurance that the improved ground will perform as designed for the lifetime of the structure.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../deep-soil-mixing/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Deep Soil Mixing (DSM) design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../jet-grouting-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Jet grouting design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../preloading-surcharge-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Preloading with surcharge design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../vibrocompaction-design/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Vibrocompaction design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 <section class="block mid-cta-6c29-6c29" style="padding:2rem 0">
@@ -205,7 +260,7 @@ body>*{max-width:100vw}
     if(!el)return;
     var map=L.map(el).setView([52.4081812,-1.510477],12);
     L.tileLayer('https://{s}.tile-6c29.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
-    L.marker([52.4081812,-1.510477],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(map).bindPopup("Coventry").openPopup();
+    L.marker([52.4081812,-1.510477],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(map).bindPopup("Coventry").openPopup();
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 })();
@@ -225,7 +280,7 @@ body>*{max-width:100vw}
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([52.4081812,-1.510477],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Coventry");
+          L.marker([52.4081812,-1.510477],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m).bindPopup("Coventry");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
